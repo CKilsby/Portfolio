@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!-- Swiper js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- boxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Unicons -->
+    <link rel='stylesheet' href="https://unicons.ionscout.com/release/v4.0.0/css/line.css">
+
+    <!-- main file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== Header ========== -->
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="" alt="" class="img_fluid">
+            </a>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="#hero" class="menu_link active-link">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#about" class="menu_link">About</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#resume" class="menu_link">Resume</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#portfolio" class="menu_link">Portfolio</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#services" class="menu_link">Services</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#contact" class="menu_link">Contact</a>
+                </li>
+                <ion-icon name="close-outline" class="close_icon"></ion-icon>
+            </ul>
+            <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== Hero Section ========== -->
+        <section class="hero section" id="hero">
+            <div class="hero_container container grid">
+                <div class="hero_content">
+                    <h4>Hello there,</h4>
+                    <h1>
+                        I'm
+                        <span class="typed" data-typed-items="Designer, Developer, Freelance"></span>
+                    </h1>
+                    <p>
+                        I'm a website developer/desiner based in Leicester. I am a determined and eager learner.
+                    </p>
+                    <div class="hero_social">
+                        <a href="#"<ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                    <a href="#contact" class="btn">
+                        Read More
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="hero_img">
+                    <img src="" alt="" class="img_fluid" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== About section ========== -->
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+
+            <div class="about_container container grid">
+                <div class="about_img">
+                    <img src="" alt="" />
+                </div>
+                <div class="about_content">
+                    <h1>I make professional and intricate website designs</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Praesent nec massa quis augue porta fringilla ac in orci.
+                        Fusce vel mi convallis arcu laoreet condimentum.
+                        Fusce molestie mauris nec turpis hendrerit, at porttitor ante dictum.
+                        Maecenas malesuada condimentum urna, quis placerat mi fermentum quis.
+                        Vivamus in vestibulum est.
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="number">3</span>
+                            <br />
+                            <span class="text">Completed <br />projects</span>
+                        </div>
+                        <div>
+                            <span class="number">1</span>
+                            <br />
+                            <span class="text">Positive <br />reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Resume section ========== -->
+        <section class="resume section" id="resume">
+            <h2 class="section_title">Resume</h2>
+
+            <div class="resume_container container grid">
+                <div class="resume_tabs">
+                    <ul>
+                        <li>
+                            <a href="#page-1" class="current">Education</a>
+                        </li>
+                        <li>
+                            <a href="#page-2">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#page-3">Skills</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_content">
+                    <div id="page-1" class="page one">
+                    </div>
+                    <div class="page_heading">Education</div>
+                    <div class="resume_wrap">
+                        <div class="resume_wrap-icon">
+                            <i class="uil uil-graduation-cap"></i>
+                        </div>
+                        <div class="resume_wrap-content">
+                            <span class="date">2019-2022</span>
+                            <h4>Bachelor in ICT</h4>
+                            <span class="position">DeMontfort University</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Praesent nec massa quis augue porta fringilla ac in orci.
+                                Fusce vel mi convallis arcu laoreet condimentum.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="page-2" class="page two">
+                        <div class="page_heading">Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Portfolio section ========== -->
+        <section class="portfolio_section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+
+            <div class="portfolio_container container">
+                <ul class="portfolio_filters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">App</li>
+                    <li data-filter=".filter-card">Card</li>
+                    <li data-filter=".filter-web">Web</li>
+                </ul>
+                <div class="portfolio_wrap-container">
+                    <div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="" alt="" />
+                            <div class="portfolio_info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><i class="uil uil-plus"></i></a>
+                                    <a href="#"><i class="uil uil-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="" alt="" />
+                            <div class="portfolio_info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><i class="uil uil-plus"></i></a>
+                                    <a href="#"><i class="uil uil-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="" alt="" />
+                            <div class="portfolio_info">
+                                <h4>App 2</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><i class="uil uil-plus"></i></a>
+                                    <a href="#"><i class="uil uil-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-card">
+                        <div class="portfolio_wrap">
+                            <img src="" alt="" />
+                            <div class="portfolio_info">
+                                <h4>Card 1</h4>
+                                <p>Card</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><i class="uil uil-plus"></i></a>
+                                    <a href="#"><i class="uil uil-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Testimonial section ========== -->
+        <section class="testimonial section">
+            <h2 class="section_title">Testimonial</h2>
+
+            <div class="testimonial_container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial_item swiper-slide">
+                        <i class='bx bxs-quote-alt-left'></i>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent nec massa quis augue porta fringilla ac in orci.
+                            Fusce vel mi convallis arcu laoreet condimentum.
+                        </p>
+                        <div class="img_name">
+                            <img src="" alt="Image not available" />
+                            <span class="name">A Name</span>
+                            <span class="post">Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Services section =========== -->
+        <section class="services section" id="services">
+            <h2 class="section_title">Services</h2>
+
+            <div class="services_container container grid">
+                <div class="services_item">
+                    <i class="uil uil-window-grid"></i>
+                    <h3 class="services_title">UI/UX <br />Designer</h3>
+                    <span class="services_button">
+                        View More <i class="uil uil-angle-right"></i>
+                    </span>
+                    <div class="services_model">
+                        <div>
+                            <ion-icon name="close-outline" class="close_icon"></ion-icon>
+                            <h3 class="services_model-title">UI/UX Designer</h3>
+                            <p class="services_model-description">Services with more than a years experience, 
+                            that has provided quality work for clients and companies alike.</p>
+                            <ul>
+                                <li>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p class="services_model-info">I develop user interface.</p>
+                                </li>
+                                <li>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p class="services_model-info">Web Page Development.</p>
+                                </li>
+                                <li>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p class="services_model-info">I create ux element interactions.</p>
+                                </li>
+                                <li>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p class="services_model-info">I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- mixitup -->
+    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>"
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--ionIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Main script -->
+    <script src="main.js"></script>
+
+</body>
+</html>
